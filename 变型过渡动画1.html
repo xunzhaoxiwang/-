@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>变型过渡动画1</title>
+	<style>
+		*{margin:0;padding:0}
+		div{
+			width: 200px;
+			height: 200px;
+			margin:100px auto;
+			overflow:hidden;
+		}
+		div img{
+			width: 200px;
+			height: 200px;
+			transition:all 0.5s ease 0s;
+		}
+
+		div:hover img{
+			transform:scale(1.2);
+		}
+	</style>
+</head>
+<body>
+	<div><img src="images/36.jpg" alt=""></div>
+</body>
+</html>
