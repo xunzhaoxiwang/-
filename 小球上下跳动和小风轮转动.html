@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自定义动画小练习</title>
+	<style>
+		*{margin:0;padding:0}
+		img{
+			margin:200px 50px;
+		}
+
+		.ball{
+			animation:tiao 0.8s ease-in 0s infinite alternate;
+		}
+
+		@keyframes tiao{
+			from{
+				transform:translateY(-200px);
+			}
+			to{
+				transform:translateY(0);
+			}
+		}
+
+
+		.fengche{
+			animation:zhuan 4s linear 0s infinite;
+		}
+
+		@keyframes zhuan{
+			0%{
+				transform:rotate(0deg);
+			}
+			100%{
+				transform:rotate(-360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<img src="images/52/ball.png" alt="" class="ball">
+	<img src="images/52/fengche.png" alt="" class="fengche">
+</body>
+</html>

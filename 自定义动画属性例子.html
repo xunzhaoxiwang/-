@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自定义动画</title>
+	<style>
+		*{margin:0;padding:0}
+		div{
+			width: 250px;
+			height: 250px;
+			position:absolute;
+			left:10px;
+			top:300px;
+			background: url('images/51/51.jpg');
+
+			/*从左向右移动(一次)*/
+			/*animation: gogo 4s ease 0s;*/
+
+			/*从左向右移动(一次，并停留在终点)*/
+			/*animation:gogo 2s ease 0s forwards;*/
+
+			/*从左向右移动(延迟2秒才开始动画)*/
+			/*animation:gogo 2s ease 2s forwards;*/
+
+			/*从左向右移动(3次)*/
+			/*animation:gogo 2s ease 0s 3 forwards;*/
+
+			/*从左向右交替移动5次*/
+			/*animation:gogo 2s ease 0s 5 alternate forwards;*/
+
+			/*从左向右交替移动(无限次)*/
+			/*animation:gogo 2s ease 0s alternate forwards infinite;*/
+
+			/*从左向右先快后慢移动*/
+			animation:kuaiman 2s ease 0s;
+		}
+
+
+		/*定义动画*/
+		@keyframes gogo{
+			from{ /*起始状态*/
+				left:10px;
+			}
+			to{  /*结束状态*/
+				left:1000px;
+			}
+		}
+
+		@keyframes kuaiman{
+			0%{
+				left:10px;
+			}
+			60%{
+				left:900px;
+			}
+			100%{
+				left:1000px;
+			}
+		}
+	</style>	
+</head>
+<body>
+	<div></div>
+
+	1. 从左向右移动(一次)<br><br>
+	2. 从左向右移动(一次，并停留在终点)<br><br>
+	3. 从左向右移动(延迟2秒才开始动画)<br><br>
+	4. 从左向右移动(3次)<br><br>
+	5. 从左向右交替移动5次<br><br>
+	6. 从左向右交替移动(无限次)<br><br>
+	7. 从左向右先快后慢移动
+
+</body>
+</html>
